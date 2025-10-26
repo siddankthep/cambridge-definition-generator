@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambridge Definition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Create your own Cambridge Definition!</h1>
+    <p>
+      Edit the content below to create your own Cambridge Definition Then, click
+      the "Save as Image" button to save your definition as a PNG image. You can
+      edit the word, word type, pronunciation, definition and examples. You can
+      add more examples by pressing "Enter". Have fun!
+    </p>
+
+    <div class="container">
+      <div class="background-container" id="background-container">
+        <div class="word block">
+          <div class="word" contenteditable="true" id="word">beauty</div>
+          <div class="word-type" contenteditable="true">noun</div>
+          <div class="pronunciation-block-container">
+            <span class="pronunciation-block">
+              <span class="country">UK</span>
+              <span class="speak">
+                <img src="volume-up-interface-symbol.png" alt="speak" />
+              </span>
+              <span class="pronunciation" contenteditable="true"
+                >/ˈbjuː.ti/</span
+              >
+            </span>
+            <span class="pronunciation-block">
+              <span class="country">US</span>
+              <span class="speak">
+                <img src="volume-up-interface-symbol.png" alt="speak" />
+              </span>
+              <span class="pronunciation" contenteditable="true"
+                >/ˈbjuː.t̬i/</span
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="definition-block">
+          <div class="definition-text" contenteditable="true">
+            Your definition here
+          </div>
+          <div class="definition-examples">
+            <ul id="examples-list">
+              <li>
+                <div class="example-text" contenteditable="true">
+                  Add your example here
+                </div>
+              </li>
+              <li>
+                <div class="example-text" contenteditable="true">
+                  Another example here
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="saveAsImage()" class="save-btn">Save as Image</button>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </body>
+</html>

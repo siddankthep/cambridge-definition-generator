@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d2a57;
+  background-color: #ffffffb6;
+}
+
+ul {
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-container {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  width: 772px;
+}
+
+.word-block {
+  padding: 0 0 12px 10px;
+}
+.word {
+  margin: 5px 0;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.word-type {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1d2a57;
+  font-style: italic;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.country {
+  margin-right: 5px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.speak img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.pronunciation {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.pronunciation-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pronunciation-block-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.definition-block {
+  border-top: 2px solid #fec32e;
+  padding-top: 15px;
+}
+
+.definition-text {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  display: block;
+  font-weight: 700;
+}
+
+.definition-examples {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.example-text {
+  margin-right: 22px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 17px;
+  line-height: 1.4;
+  padding-left: -12px;
+  display: block;
+  font-style: italic;
+}
+
+[contenteditable="true"] {
+  cursor: text;
+  border-radius: 4px;
+}
+
+[contenteditable="true"]:hover {
+  background-color: #f9f9f9;
+}
+
+[contenteditable="true"]:focus {
+  outline: 2px solid #fec32e;
+  background-color: #fffef8;
+}
+
+.save-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  background-color: #fec32e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d2a57;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.save-btn:hover {
+  background-color: #fdb71e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.save-btn:active {
+  transform: translateY(0);
+}
